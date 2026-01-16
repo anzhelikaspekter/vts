@@ -107,10 +107,10 @@ Key optimizations include:
 
 | Metric            | Before                                   | After                                    | Improvement |
 |-------------------|-------------------------------------------|-------------------------------------------|-------------|
-| **Performance**   | ![](https://img.shields.io/badge/67-orange)  | ![](https://img.shields.io/badge/90-brightgreen)  | ↑ +9        |
-| **Accessibility** | ![](https://img.shields.io/badge/84-orange) | ![](https://img.shields.io/badge/97-brightgreen) | ↑ +16       |
+| **Performance**   | ![](https://img.shields.io/badge/67-orange)  | ![](https://img.shields.io/badge/90-brightgreen)  | ↑ +23        |
+| **Accessibility** | ![](https://img.shields.io/badge/84-orange) | ![](https://img.shields.io/badge/97-brightgreen) | ↑ +13       |
 | **Best Practices**| ![](https://img.shields.io/badge/96-brightgreen) | ![](https://img.shields.io/badge/96-brightgreen) | —          |
-| **SEO**           | ![](https://img.shields.io/badge/91-orange) | ![](https://img.shields.io/badge/92-brightgreen) | ↑ +34         |
+| **SEO**           | ![](https://img.shields.io/badge/91-orange) | ![](https://img.shields.io/badge/92-brightgreen) | ↑ +1         |
 
 
 ### 🖼 Before / After 
@@ -125,10 +125,10 @@ Key optimizations include:
 
 | Metric            | Before                                   | After                                    | Improvement |
 |-------------------|-------------------------------------------|-------------------------------------------|-------------|
-| **Performance**   | ![](https://img.shields.io/badge/86-orange)  | ![](https://img.shields.io/badge/100-brightgreen)  | ↑ +36       |
-| **Accessibility** | ![](https://img.shields.io/badge/97-brightgreen) | ![](https://img.shields.io/badge/100-brightgreen) | ↑ +34        |
-| **Best Practices**| ![](https://img.shields.io/badge/100-brightgreen) | ![](https://img.shields.io/badge/96-brightgreen) | —       |
-| **SEO**           | ![](https://img.shields.io/badge/90-brightgreen) | ![](https://img.shields.io/badge/91-brightgreen) | ↑ +18           |
+| **Performance**   | ![](https://img.shields.io/badge/86-orange)  | ![](https://img.shields.io/badge/100-brightgreen)  | ↑ +14       |
+| **Accessibility** | ![](https://img.shields.io/badge/97-brightgreen) | ![](https://img.shields.io/badge/100-brightgreen) | ↑ +3        |
+| **Best Practices**| ![](https://img.shields.io/badge/100-brightgreen) | ![](https://img.shields.io/badge/96-brightgreen) | ↓ -1       |
+| **SEO**           | ![](https://img.shields.io/badge/90-brightgreen) | ![](https://img.shields.io/badge/91-brightgreen) | ↑ +1           |
 
 
 ### 🖼 Before / After 
@@ -143,10 +143,10 @@ Key optimizations include:
 
 | Metric            | Before                                   | After                                    | Improvement |
 |-------------------|-------------------------------------------|-------------------------------------------|-------------|
-| **Performance**   | ![](https://img.shields.io/badge/72-orange)  | ![](https://img.shields.io/badge/100-brightgreen)  | ↑ +36       |
-| **Accessibility** | ![](https://img.shields.io/badge/89-orange) | ![](https://img.shields.io/badge/96-brightgreen) | ↑ +34        |
+| **Performance**   | ![](https://img.shields.io/badge/72-orange)  | ![](https://img.shields.io/badge/100-brightgreen)  | ↑ +28       |
+| **Accessibility** | ![](https://img.shields.io/badge/89-orange) | ![](https://img.shields.io/badge/96-brightgreen) | ↑ +7        |
 | **Best Practices**| ![](https://img.shields.io/badge/96-brightgreen) | ![](https://img.shields.io/badge/96-brightgreen) | —       |
-| **SEO**           | ![](https://img.shields.io/badge/60-orange) | ![](https://img.shields.io/badge/91-brightgreen) | ↑ +18           |
+| **SEO**           | ![](https://img.shields.io/badge/60-orange) | ![](https://img.shields.io/badge/91-brightgreen) | ↑ +31           |
 
 
 ### 🖼 Before / After 
