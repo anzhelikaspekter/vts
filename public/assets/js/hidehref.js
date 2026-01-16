@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Получаем все якорные ссылки на странице
     var anchorLinks = document.querySelectorAll('a[href^="#"]');
 
-    // Функция для плавной прокрутки к якорю
     function smoothScroll(event) {
         event.preventDefault();
 
@@ -12,12 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (targetElement) {
             targetElement.scrollIntoView({ behavior: 'smooth' });
 
-            // Изменяем адресную строку без перезагрузки страницы
             history.pushState(null, '', window.location.pathname);
         }
     }
 
-    // Добавляем обработчик событий для всех якорных ссылок
     anchorLinks.forEach(function (link) {
         link.addEventListener('click', smoothScroll);
     });

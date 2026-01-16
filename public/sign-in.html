@@ -44,7 +44,7 @@
     <main id="main">
         <section class="sign-in" aria-labelledby="signInTitle">
             <header class="sign-in__header">
-                <a href="index.php" class="btn-link">
+                <a href="index.html" class="btn-link">
                     <span class="icon back" aria-hidden="true"></span>
                     <span>Back to VTS Limited</span>
                 </a>
@@ -61,7 +61,7 @@
 
                         <p class="sign-in__content--desc">
                             First time here?
-                            <a href="sign-up.php" class="sign-in__content--link">Sign up for free</a>
+                            <a href="sign-up.html" class="sign-in__content--link">Sign up for free</a>
                         </p>
                     </div>
                 </header>
@@ -88,7 +88,11 @@
                     <footer class="sign-in__content--footer">
                         <button class="btn-primary" type="submit">Log In</button>
 
-                        <?php include __DIR__ . '/templates/components/btn-choose.php'; ?>
+                        <div class="btn-choose">
+                            <hr>
+                            <span class="btn-choose__desc">or</span>
+                            <hr>
+                        </div>
 
                         <button class="btn-google" type="button">
                             <span class="icon google" aria-hidden="true"></span>
@@ -110,25 +114,7 @@
         </section>
     </main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const showPasswordIcons = document.querySelectorAll('.show-password');
-
-            showPasswordIcons.forEach(icon => {
-                icon.addEventListener("click", function() {
-                    const input = icon.previousElementSibling;
-
-                    icon.classList.toggle("hide-password");
-
-                    if (input.type === "password") {
-                        input.type = "text";
-                    } else {
-                        input.type = "password";
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="assets/js/password.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account — VTS Limited</title>
+    <meta name="description" content="Create your VTS Limited account to access investment tools, personal dashboard and secure financial services. Fast registration, protected access and full account control." />
+    <meta name="keywords" content="VTS Limited register, VTS sign up, create VTS account, investment account registration, secure financial account, VTS dashboard access" />
+
+    <!-- Author -->
+    <meta name="author" content="Anzhelika Spekter">
+    <meta name="copyright" content="© 2024 VTS LIMITED">
+    <meta name="publisher" content="Anzhelika Spekter">
+
+    <!-- NOINDEX -->
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar" content="#000000">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicons/favicon.ico?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png?v=1">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg?v=1" color="#262B57">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/img/logo.svg" fetchpriority="high">
+
+    <!-- Style -->
+    <link rel="preload" href="assets/css/style.min.css?v=1.0.0" as="style">
+    <link rel="stylesheet" href="assets/css/style.min.css?v=1.0.0">
+</head>
+
+<body>
+    <main id="main">
+        <section class="sign-up" aria-labelledby="signup-title">
+            <header class="sign-up__header">
+                <a href="index.html" class="btn-link">
+                    <span class="icon back" aria-hidden="true"></span>
+                    <span>Back to VTS Limited</span>
+                </a>
+            </header>
+
+            <div class="sign-up__content">
+                <header class="sign-up__content--header">
+                    <div class="sign-up__content--logo" aria-label="VTS Limited" aria-hidden="true">
+                        <img src="assets/img/logo.svg" width="160" height="40" alt="VTS LIMITED" fetchpriority="high" decoding="async">
+                    </div>
+
+                    <div class="sign-up__content--header-wrap">
+                        <h1 class="sign-up__content--title" id="signup-title">Account Register</h1>
+
+                        <p class="sign-up__content--desc">
+                            Already have an account?
+                            <a href="sign-in.html" class="sign-up__content--link">Sign in</a>
+                        </p>
+                    </div>
+                </header>
+
+                <form action="#" method="post" class="form" novalidate>
+                    <div class="form__column">
+                        <label for="login">Login</label>
+                        <input
+                            type="text"
+                            name="login"
+                            id="login"
+                            placeholder="Enter your login"
+                            autocomplete="username"
+                            required>
+                    </div>
+
+                    <div class="form__column">
+                        <label id="country-label" for="countryValue">Country</label>
+
+                        <input type="hidden" name="country" id="countryValue" value="">
+
+                        <div class="custom-select-wrapper">
+                            <div class="custom-select" id="countrySelect" role="combobox" aria-labelledby="country-label" aria-controls="countryListbox" aria-expanded="false" aria-haspopup="listbox" tabindex="0">
+                                <div class="custom-select-trigger">
+                                    <span class="placeholder" id="countryPlaceholder">Select your country</span>
+                                    <span class="icon dropdown-arrow" aria-hidden="true"></span>
+                                </div>
+
+                                <div class="custom-options" id="countryListbox" role="listbox" tabindex="-1">
+                                    <span class="custom-option" role="option" id="country-opt-frst" data-value="frst" aria-selected="false" tabindex="-1">Country Frst</span>
+                                    <span class="custom-option" role="option" id="country-opt-scnd" data-value="scnd" aria-selected="false" tabindex="-1">Country Scnd</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__column">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" autocomplete="tel" inputmode="tel" required>
+                    </div>
+
+                    <div class="form__column">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address" autocomplete="email" required>
+                    </div>
+
+                    <div class="form__column">
+                        <label for="password">Create password</label>
+
+                        <div class="password-field">
+                            <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="new-password" required>
+
+                            <button type="button" class="icon show-password" aria-label="Show password" aria-controls="password" aria-pressed="false"></button>
+                        </div>
+                    </div>
+
+                    <div class="form__column">
+                        <label for="confirmPassword">Confirm password</label>
+
+                        <div class="password-field">
+                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password" autocomplete="new-password" required>
+
+                            <button type="button" class="icon show-password" aria-label="Show confirm password" aria-controls="confirmPassword" aria-pressed="false"></button>
+                        </div>
+                    </div>
+
+                    <div class="form__column">
+                        <label for="upliner">Upliner</label>
+
+                        <input type="text" name="upliner" id="upliner" placeholder="Enter your upliner" autocomplete="off">
+                    </div>
+
+                    <!-- Financial key -->
+                    <fieldset class="form__column">
+                        <legend>Set financial key</legend>
+
+                        <div class="form__key" role="group" aria-label="Financial key">
+                            <input class="code" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 1" required>
+                            <input class="code" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 2" required>
+                            <input class="code" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 3" required>
+                            <input class="code" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 4" required>
+                            <input class="code" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 5" required>
+                            <input class="code" inputmode="numeric" pattern="[0-9]*" maxlength="1" aria-label="Digit 6" required>
+                        </div>
+                    </fieldset>
+
+                    <footer class="sign-up__content--footer">
+                        <button type="submit" class="btn-primary">Continue registration</button>
+
+                        <div class="btn-choose">
+                            <hr>
+                            <span class="btn-choose__desc">or</span>
+                            <hr>
+                        </div>
+
+                        <button type="button" class="btn-google">
+                            <span class="icon google" aria-hidden="true"></span>
+                            <span>Sign in with Google</span>
+                        </button>
+                    </footer>
+                </form>
+            </div>
+
+            <footer class="sign-up__footer">
+                <p class="sign-up__footer--desc">
+                    By continuing, you agree to ImratGroup's
+                    <a href="#" class="sign-up__footer--link">Terms of Service</a>
+                    and
+                    <a href="#" class="sign-up__footer--link">Privacy Policy</a>,
+                    and to receive periodic emails with updates.
+                </p>
+            </footer>
+        </section>
+    </main>
+
+    <script src="assets/js/password.js"></script>
+    <script src="assets/js/form-key.js"></script>
+    <script src="assets/js/custom-select.js"></script>
+</body>
+
+</html>

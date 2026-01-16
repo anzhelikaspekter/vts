@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 customSelect.setAttribute('aria-expanded', 'true');
                 options.setAttribute('aria-hidden', 'false');
 
-                // твоя логика позиционирования
                 if (customSelect.id === 'customSelectUp') {
                     options.style.top = 'auto';
                     options.style.bottom = '110%';
