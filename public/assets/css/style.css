@@ -3670,6 +3670,14 @@ html:not(.is-ready) .promo__bg {
   filter: none !important;
 }
 
+html:not(.is-ready) .promo__bg,
+html:not(.is-ready) .promo__bg img.promo__bg {
+  filter: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+  animation: none !important;
+}
+
 html:not(.is-ready) .promo::before,
 html:not(.is-ready) .promo::after {
   filter: none !important;
@@ -3689,7 +3697,7 @@ html:not(.is-ready) .promo__header--wrap {
 .cta,
 .footer {
   content-visibility: auto;
-  contain-intrinsic-size: 800px;
+  contain-intrinsic-size: 1000px;
 }
 
 @media (prefers-reduced-motion: reduce) {
