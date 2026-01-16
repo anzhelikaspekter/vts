@@ -798,7 +798,6 @@
   height: calc(100vh - 82px);
   display: flex;
   flex-direction: column;
-  background: var(--promo-bg-color) url(../img/promo-bg.webp) no-repeat 50% 50%/cover;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -824,6 +823,15 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
+.promo__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
 .promo__header {
   width: 100%;
   height: 100%;
@@ -831,6 +839,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 1;
 }
 .promo__header::before {
   content: "";

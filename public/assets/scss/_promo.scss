@@ -10,7 +10,6 @@
     height: calc(100vh - 82px);
     display: flex;
     flex-direction: column;
-    background: var(--promo-bg-color) url(../img/promo-bg.webp) no-repeat 50% 50% / cover;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -35,6 +34,14 @@
         background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
         transform: matrix(1, 0, 0, -1, 0, 0);
     }
+    &__bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
     &__header {
         width: 100%;
         height: 100%;
@@ -42,6 +49,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        z-index: 1;
         &::before {
             content: "";
             position: absolute;
@@ -229,7 +237,9 @@
     backface-visibility: hidden;
     transform: translateZ(0);
     perspective: 600;
-    box-shadow: inset 0 0 80px rgba(255, 255, 255, 0.1), 0 0 80px rgba(255, 255, 255, 0.1);
+    box-shadow:
+        inset 0 0 80px rgba(255, 255, 255, 0.1),
+        0 0 80px rgba(255, 255, 255, 0.1);
     z-index: -1;
     @media screen and (min-width: 768px) and (max-width: 1239.98px) {
         top: -150px;
