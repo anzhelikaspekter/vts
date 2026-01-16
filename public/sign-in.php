@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In — VTS Limited</title>
+    <meta name="description" content="Sign in to your VTS Limited account to manage your dashboard, access secure financial tools and control your personal account." />
+    <meta name="keywords" content="VTS Limited login, VTS sign in, access VTS account, secure account login, VTS dashboard login, financial account access" />
+
+    <!-- Author -->
+    <meta name="author" content="Anzhelika Spekter">
+    <meta name="copyright" content="© 2024 VTS LIMITED">
+    <meta name="publisher" content="Anzhelika Spekter">
+
+    <!-- NOINDEX -->
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar" content="#000000">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicons/favicon.ico?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png?v=1">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg?v=1" color="#262B57">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preload" href="assets/fonts/poppins/poppins-v21-latin-regular.woff2?v=1" as="font" type="font/woff2" crossorigin>
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/img/logo.svg" fetchpriority="high">
+
+    <!-- Style -->
+    <link rel="preload" href="assets/css/style.min.css?v=1.0.0" as="style">
+    <link rel="stylesheet" href="assets/css/style.min.css?v=1.0.0">
+</head>
+
+<body>
+    <main id="main">
+        <section class="sign-in" aria-labelledby="signInTitle">
+            <header class="sign-in__header">
+                <a href="index.php" class="btn-link">
+                    <span class="icon back" aria-hidden="true"></span>
+                    <span>Back to VTS Limited</span>
+                </a>
+            </header>
+
+            <div class="sign-in__content" id="main-content">
+                <header class="sign-in__content--header">
+                    <div class="sign-in__content--logo" aria-label="VTS Limited" aria-hidden="true">
+                        <img src="assets/img/logo.svg" width="160" height="40" alt="VTS LIMITED" fetchpriority="high" decoding="async">
+                    </div>
+
+                    <div class="sign-in__content--header-wrap">
+                        <h1 class="sign-in__content--title" id="signin-title">Welcome Back</h1>
+
+                        <p class="sign-in__content--desc">
+                            First time here?
+                            <a href="sign-up.php" class="sign-in__content--link">Sign up for free</a>
+                        </p>
+                    </div>
+                </header>
+
+                <form action="#" method="post" class="form" novalidate>
+                    <div class="form__column">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address" autocomplete="email" inputmode="email" required>
+                    </div>
+
+                    <div class="form__column">
+                        <div class="form__row">
+                            <label for="password">Password</label>
+                            <a href="#" class="form__link">Forgot Password?</a>
+                        </div>
+
+                        <div class="form__control">
+                            <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+                            <button type="button" class="icon show-password" aria-label="Show password" aria-pressed="false"></button>
+                        </div>
+                    </div>
+
+                    <footer class="sign-in__content--footer">
+                        <button class="btn-primary" type="submit">Log In</button>
+
+                        <?php include __DIR__ . '/templates/components/btn-choose.php'; ?>
+
+                        <button class="btn-google" type="button">
+                            <span class="icon google" aria-hidden="true"></span>
+                            <span>Sign In with Google</span>
+                        </button>
+                    </footer>
+                </form>
+            </div>
+
+            <footer class="sign-in__footer">
+                <p class="sign-in__footer--desc">
+                    By continuing, you agree to ImratGroup's
+                    <a href="#" class="sign-in__footer--link">Terms of Service</a>
+                    and
+                    <a href="#" class="sign-in__footer--link">Privacy Policy</a>,
+                    and to receive periodic emails with updates.
+                </p>
+            </footer>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const showPasswordIcons = document.querySelectorAll('.show-password');
+
+            showPasswordIcons.forEach(icon => {
+                icon.addEventListener("click", function() {
+                    const input = icon.previousElementSibling;
+
+                    icon.classList.toggle("hide-password");
+
+                    if (input.type === "password") {
+                        input.type = "text";
+                    } else {
+                        input.type = "password";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+.icon {
+    width: 21px;
+    min-width: 21px;
+    height: 21px;
+    min-height: 21px;
+    object-fit: contain;
+    display: block;
+    &.back {
+        background: url(../img/arrow-left.svg) no-repeat 50% 50% / contain;
+    }
+    &.google {
+        background: url(../img/google.svg) no-repeat 50% 50% / contain;
+    }
+    &.show-password {
+        background: url(../img/eye-show.svg) no-repeat 50% 50% / contain;
+    }
+    &.hide-password {
+        background: url(../img/eye-hide.svg) no-repeat 50% 50% / contain;
+    }
+    &.dropdown-arrow {
+        background: url(../img/dropdown-arrow.svg) no-repeat 50% 50% / contain;
+    }
+    &.dropdown-arrow-white {
+        background: url(../img/dropdown-arrow-white.svg) no-repeat 50% 50% / contain;
+    }
+    &.get-started {
+        background: url(../img/arrow-up-right.svg) no-repeat 50% 50% / contain;
+    }
+    &.menu {
+        background: url(../img/menu.svg) no-repeat 50% 50% / contain;
+    }
+    &.close {
+        background: url(../img/close.svg) no-repeat 50% 50% / contain;
+    }
+    &.twitter {
+        background: url(../img/twitter.svg) no-repeat 50% 50% / contain;
+    }
+    &.youtube {
+        background: url(../img/youtube.svg) no-repeat 50% 50% / contain;
+    }
+    &.telegram {
+        background: url(../img/telegram.svg) no-repeat 50% 50% / contain;
+    }
+    &.facebook {
+        background: url(../img/facebook.svg) no-repeat 50% 50% / contain;
+    }
+    &.whatsapp {
+        background: url(../img/whatsapp.svg) no-repeat 50% 50% / contain;
+    }
+    &.email {
+        background: url(../img/email.svg) no-repeat 50% 50% / contain;
+    }
+    &.financial {
+        background: url(../img/icon_1.svg) no-repeat 50% 50% / contain;
+    }
+    &.discipline {
+        background: url(../img/icon_2.svg) no-repeat 50% 50% / contain;
+    }
+    &.transparency {
+        background: url(../img/icon_3.svg) no-repeat 50% 50% / contain;
+    }
+    &.strategy {
+        background: url(../img/icon_4.svg) no-repeat 50% 50% / contain;
+    }
+    &.excellence {
+        background: url(../img/icon_5.svg) no-repeat 50% 50% / contain;
+    }
+    &.ambition {
+        background: url(../img/icon_6.svg) no-repeat 50% 50% / contain;
+    }
+}

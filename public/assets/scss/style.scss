@@ -1,0 +1,60 @@
+:root {
+    --bg-color: #000000;
+    --font-primary: "Poppins",sans-serif;
+}
+
+@import "_icon";
+@import "_btn";
+@import "_header";
+@import "_promo";
+@import "_info";
+@import "_invest";
+@import "_solution";
+@import "_track";
+@import "_insights";
+@import "_cta";
+@import "_footer";
+@import "_sign-in";
+@import "_sign-up";
+@import "_form";
+@import "_custom-select";
+@import "_outline";
+@import "_scrollbar";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
+    font-family: var(--font-primary);
+    line-height: 1.2;
+}
+
+body {
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+a, button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.hide {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
