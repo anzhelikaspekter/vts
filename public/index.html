@@ -977,6 +977,28 @@
     <!-- SCRIPTS -->
     <script src="assets/js/header.js" defer></script>
     <script src="assets/js/track.js" defer></script>
+    <script>
+        if ('PerformanceObserver' in window) {
+            try {
+                const po = new PerformanceObserver((list) => {
+                    for (const e of list.getEntries()) {
+                        if (e.entryType === 'largest-contentful-paint') {
+                            document.documentElement.classList.add('is-ready');
+                            po.disconnect();
+                            break;
+                        }
+                    }
+                });
+                po.observe({ type: 'largest-contentful-paint', buffered: true });
+            } catch (e) {
+                document.documentElement.classList.add('is-ready');
+            }
+        } else {
+            document.documentElement.classList.add('is-ready');
+        }
+    </script>
+
+    </script>
 </body>
 
 </html>
