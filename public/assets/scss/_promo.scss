@@ -167,8 +167,10 @@
         }
         &--title {
             font-size: calc(32px + (72 - 32) * ((100vw - 320px) / (1440 - 320)));
+            line-height: 1.1;
             font-weight: 700;
             text-transform: uppercase;
+            min-height: 3.3em;
             color: var(--promo-title-color);
             & span {
                 font-size: calc(32px + (72 - 32) * ((100vw - 320px) / (1440 - 320)));
